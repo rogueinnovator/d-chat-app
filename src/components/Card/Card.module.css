@@ -1,0 +1,46 @@
+.Card_box {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #f1820342;
+  cursor: pointer;
+}
+
+.Card_box_right {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+}
+
+.Card_box_right_middle h4 {
+  margin: 0;
+  font-size: 1.5rem; /* Adjust font size for better visibility */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Cut off overflowing text */
+  text-overflow: ellipsis; /* Add '...' for overflowed text */
+}
+
+.Card_box_right_middle small {
+  display: block; /* Ensure it appears on a new line */
+  font-size: 0.85rem; /* Slightly smaller font size for the address */
+  color: rgb(92, 63, 9);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Same behavior for address */
+}
+
+.Card_box_left {
+  border-radius: 50%;
+}
+
+.Card_box_left_img {
+  display: block;
+}
+.Card_box_right_end {
+  font-weight: bold;
+  width: 60px;
+  height: 34px;
+  position: relative;
+  left: 196px;
+  top: -15;
+}

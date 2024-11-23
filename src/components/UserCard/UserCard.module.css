@@ -1,0 +1,41 @@
+.UserCard {
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  text-align: 1rem;
+  padding: 1rem;
+  position: relative;
+}
+.UserCard_box_img {
+  border-radius: 50%;
+}
+.UserCard_box_info {
+  line-height: 0.6;
+  padding: 1rem;
+}
+.UserCard_box_info h3 {
+  padding: 1rem;
+  font-size: x-large;
+}
+.UserCard_box_info p {
+  padding: 1rem;
+  color: #f18303;
+}
+.UserCard_box_info button {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #f18303;
+  width: 50%;
+  margin-top: 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.number {
+  position: absolute;
+  right: 1rem;
+  padding: 1rem 1.3rem;
+  background-color: #b6a99a88;
+  border-radius: 50%;
+  top: 1rem;
+}

@@ -1,0 +1,74 @@
+.Chat {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.25);
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+}
+.Chat_box {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 50vh;
+  width: 80%;
+  margin: 0 auto;
+  overflow-y: scroll;
+}
+.Chat_box_right p,
+.Chat_box_left p {
+  background-color: #f182035b;
+  padding: 1rem;
+  border-top-right-radius: 2.5rem;
+  border-top-left-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
+  position: relative;
+}
+.Chat_box_left_title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1rem;
+}
+.Chat_box_send {
+  display: flex;
+
+  align-items: center;
+  gap: 1rem;
+}
+.Chat_box_send input {
+  width: 100%;
+  height: 60%;
+  background-color: #f182035b;
+  outline: none;
+  height: 60%;
+  border: none;
+  padding: 1rem;
+  color: #000000;
+  border-radius: 1.6rem;
+}
+.Chat_user_info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  line-height: 1;
+}
+.Chat_user_info_box h4,
+.Chat_user_info_box {
+  margin: 2px;
+  font-size: 20px; /* Adjust font size for better visibility */
+  white-space: nowrap; /* Prevent text from wrapping */
+  overflow: hidden; /* Cut off overflowing text */
+  text-overflow: ellipsis;
+}
+@media only screen and (max-width: 50em) {
+  .Chat {
+    padding: 1rem;
+  }
+  .Chat p {
+    font-size: 0.8rem;
+  }
+  .Chat small {
+    font-size: 0.8rem;
+  }
+  .show {
+    display: none;
+  }
+}

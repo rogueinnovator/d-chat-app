@@ -1,0 +1,23 @@
+.allUsers_info {
+  width: 80%;
+  margin: 4rem auto;
+  font-size: 2rem;
+}
+.allUsers {
+  width: 80%;
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: auto repeat(3, 1fr);
+  gap: 3rem;
+}
+@media only screen and (max-width: 50rem) {
+  .allUsers_info {
+    width: 90%;
+    font-size: 1rem;
+    margin: 2rem auto;
+  }
+  .allUsers {
+    width: 90%;
+    grid-template-columns: 1fr;
+  }
+}

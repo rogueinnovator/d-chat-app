@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity >=0.7.0 <0.9.0;
+pragma solidity 0.8.19;
 contract ChatApp {
     struct user {
         string name;
@@ -117,6 +117,6 @@ contract ChatApp {
     }
     //GET ALL USERS
     function getAllAppUsers() public view returns (AllUserStruct[] memory) {
-        return getAllAppUsers();
+        return getAllUsers;
     }
 }

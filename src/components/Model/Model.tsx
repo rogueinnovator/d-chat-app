@@ -1,3 +1,4 @@
+"use client";
 import {useAppContext} from '@/Context/ChatAppContext';
 import React, {Dispatch, SetStateAction, useState} from 'react';
 import Style from "./Model.module.css";

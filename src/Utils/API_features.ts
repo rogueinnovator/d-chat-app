@@ -8,6 +8,7 @@ export const CheckWalletConnection = async (): Promise<string | null> => {
       console.log("MetaMask is not installed");
       return null;
     }
+
     const accounts: string[] = await window.ethereum.request({
       methods: "eth_accounts",
     });
@@ -47,7 +48,6 @@ export const connectingWithContract = async () => {
     const web3modal = new Web3Modal();
     //prompt for connection with wallet
     const provider = await web3modal.connect();
-
     //create a web3 instance with the connected provider
     const web3 = new Web3(provider);
     const contract = fetchContract(web3);
